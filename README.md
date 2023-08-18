@@ -38,7 +38,9 @@ For easy access to the script, you can create a symbolic link to it in a directo
 
 1. Open your terminal.
 2. Navigate to the repository directory where the script is located.
-3. Run the following command to create a symbolic link: `sudo ln -s $(pwd)/network_admin_toolkit.sh /usr/local/bin/tools`
+3. Run the following command to create a symbolic link:
+`sudo ln -s $(pwd)/network_admin_toolkit.sh /usr/local/bin/tools`
+`sudo chmod +x $(pwd)/network_admin_toolkit.sh`
 
 Now you can run the script from anywhere by simply typing `tools` in your terminal.
 
