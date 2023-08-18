@@ -34,6 +34,14 @@ The Network Admin Toolkit is a comprehensive collection of network administratio
 
 Follow the on-screen instructions to select and perform a variety of network administration tasks.
 
+For easy access to the script, you can create a symbolic link to it in a directory that's included in your system's PATH. Here's how you can do it:
+
+1. Open your terminal.
+2. Navigate to the repository directory where the script is located.
+3. Run the following command to create a symbolic link: `sudo ln -s $(pwd)/network_admin_toolkit.sh /usr/local/bin/tools`
+
+Now you can run the script from anywhere by simply typing `tools` in your terminal.
+
 ### Requirements
 
 - A Linux environment
