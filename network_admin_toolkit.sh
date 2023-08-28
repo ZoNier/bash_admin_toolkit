@@ -132,11 +132,6 @@ function show_logged_users() {
     return_to_menu
 }
 
-function check_ports() {
-    netstat -tuln
-    return_to_menu
-}
-
 function show_process_list() {
     echo "Running Processes:"
     ps aux
@@ -238,7 +233,7 @@ function main_menu() {
 
 function show_menu() {
     PS3="Select an option (or press 'q' to exit): "
-    options=("SSH Login" "Telnet" "Run 'screen /dev/ttyUSB0'" "Close all 'screen' sessions" "Ping" "Traceroute" "MTR" "View Detailed HTTP Headers" "Nmap (Quick Scan)" "Whois" "Start iperf (Server)" "Run iperf (Client)" "Speedtest" "Start HTTP Server" "Logged In Users" "Check Local Ports" "Running Processes" "Network Connections" "Disk Usage" "System Information" "Restart Service" "Install/Check Dependencies")
+    options=("SSH Login" "Telnet" "Run 'screen /dev/ttyUSB0'" "Close all 'screen' sessions" "Ping" "Traceroute" "MTR" "View Detailed HTTP Headers" "Nmap (Quick Scan)" "Whois" "Start iperf (Server)" "Run iperf (Client)" "Speedtest" "Start HTTP Server" "Logged In Users" "Running Processes" "Network Connections" "Disk Usage" "System Information" "Restart Service" "Install/Check Dependencies")
 
     clear
     echo "(っ◔◡◔)っ ♥ Main Admin Menu ♥"
@@ -301,9 +296,6 @@ function show_menu() {
             "Logged In Users")
                 echo "Displaying logged in users..."
                 show_logged_users ;;
-            "Check Local Ports")
-                echo "Check Ports: Display open network ports on the local machine."
-                check_ports ;;
             "Running Processes")
                 echo "Displaying running processes..."
                 show_process_list ;;
